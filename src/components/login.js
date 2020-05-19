@@ -59,7 +59,7 @@ class Login extends React.Component {
   }
 
   filterUser(users) {
-    if (user != null) {
+    if (users != null) {
       return users.filter((user) => {
         user = user.email.toLowerCase();
         return user.indexOf(this.state.email) > -1;
