@@ -1,0 +1,193 @@
+/* CSS for tags */
+input {
+  padding: 8px 0px 6px 6px;
+  font-size: 16px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+
+  background: none;
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+option,
+button,
+span,
+table,
+th,
+td {
+  font-family: cursive;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd63;
+}
+thead {
+  background: #376cbd9e;
+}
+
+input:focus {
+  outline: none;
+}
+.text-white {
+  color: #fff;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.btn {
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  transition: 0.1s ease;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 0 18px;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.text-white {
+  color: #ffff;
+}
+.bg-blue {
+  background-color: #376cbd;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Main page css */
+.Main {
+  font-family: cursive;
+}
+
+.Main-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Main-logo {
+    animation: Main-logo-spin infinite 20s linear;
+  }
+}
+
+.Main-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Main-link {
+  color: #61dafb;
+}
+
+@keyframes Main-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* login page css */
+.login {
+  background: white;
+  color: #282c34;
+  border-radius: 4px;
+  padding: 30px 30px;
+}
+.login input {
+  padding: 22px 0px 6px 6px;
+  width: 100%;
+}
+.login-heading {
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+.login-btn {
+  width: 100%;
+  background: #44ad48;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.1s ease;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 13px;
+}
+.error-msg {
+  color: #ef3a3a;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 4px;
+}
+.link {
+  color: #5151f7;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 0px;
+}
+/* logout btn */
+.logout-btn {
+  text-align: right;
+  margin: 0px;
+  cursor: pointer;
+  color: #ecbbbb;
+}
+/* time entry page CSS */
+.drop-down {
+  border-radius: 4px;
+  background: white;
+  font-size: 16px;
+}
+/* Media query for responsiveness */
+.container {
+  padding: 16px;
+}
+@media only screen and (min-width: 1000px) {
+  .login {
+    width: 30%;
+  }
+  .container {
+    padding: 16px 110px;
+  }
+}
