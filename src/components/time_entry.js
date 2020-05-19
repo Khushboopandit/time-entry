@@ -16,7 +16,7 @@ class TimeEntry extends React.Component {
   }
   async componentDidMount() {
     let entries = JSON.parse(await getTimeEntries());
-    this.setState({ data: entries });
+    this.setState({ data: entries == null ? [] : entries });
   }
   // update to get entries after adding
   async componentDidUpdate() {
