@@ -59,10 +59,14 @@ class Login extends React.Component {
   }
 
   filterUser(users) {
-    return users.filter((user) => {
-      user = user.email.toLowerCase();
-      return user.indexOf(this.state.email) > -1;
-    });
+    if (user != null) {
+      return users.filter((user) => {
+        user = user.email.toLowerCase();
+        return user.indexOf(this.state.email) > -1;
+      });
+    } else {
+      return [];
+    }
   }
 
   toggleRegisterationPage = () => {
