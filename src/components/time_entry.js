@@ -22,7 +22,7 @@ class TimeEntry extends React.Component {
   async componentDidUpdate() {
     let entries = JSON.parse(await getTimeEntries());
     if (this.state.data.length !== entries.length) {
-      this.setState({ data: entries });
+      this.setState({ data: entries == null ? [] : entries });
     }
   }
 
@@ -37,7 +37,10 @@ class TimeEntry extends React.Component {
     });
     saveTimeEntries(data);
     this.setState({
-      data: JSON.parse(await getTimeEntries()),
+      data:
+        JSON.parse(await getTimeEntries()) == null
+          ? []
+          : JSON.parse(await getTimeEntries()),
       task_name: "",
       project: "",
       start_date: null,
