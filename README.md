@@ -1,7 +1,9 @@
-### Time Entry
+## Time Entry
 
-## git clone <repo>
+### git clone <repo>
 
-## npm install
+### npm install
 
-## npm run start
+### npm run start
+
+### Check here https://khushboopandit.github.io/time-entry/
